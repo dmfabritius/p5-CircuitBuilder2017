@@ -1,0 +1,106 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Example circuits</title>
+    <meta charset="utf-8" />
+    <style>
+        body {
+            padding-left: 50px;
+            font: 12pt sans-serif
+        }
+
+        a {
+            display: block
+        }
+    </style>
+</head>
+<body>
+    <div style="float:left">
+        <h3>View example circuits</h3>
+        <a href="circuit.html?circuit=001_inverter.json">Simple inverter</a>
+        <a href="circuit.html?circuit=002_transistor_logic-v2.json">Simple transistor logic gates</a>
+        <a href="circuit.html?circuit=003_transistor-to-transistor_NOR_gate-v2.json">TTL NOR gate</a>
+        <a href="circuit.html?circuit=004_full_adder_logic-v2.json">Full adder using logic gates</a>
+        <a href="circuit.html?circuit=005_4-bit adder logic-v2.json">4-bit adder using logic gates</a>
+        <a href="circuit.html?circuit=006_4-bit_adder_IC-v2.json">4-bit adder using integrated circuits</a>
+        <a href="circuit.html?circuit=007_low_current_power_switch.json">Simple PNP transitor power switch</a>
+        <a href="circuit.html?circuit=8BC-02.1.0_a-stable_transistor_diagram_555_timer-v2.json">Astable timer circuit using transitors</a>
+        <a href="circuit.html?circuit=8BC-02.1.1_a-stable_logic_diagram_555_timer-v2.json">Astable timer circuit using logic gates</a>
+        <a href="circuit.html?circuit=8BC-02.1.2_a-stable_block_diagram_555_timer-v3.json">Astable timer circuit using block diagram</a>
+        <a href="circuit.html?circuit=8BC-02.2_a-stable_IC_555_timer-v2.json">Astable timer circuit using integrated circuits</a>
+        <a href="circuit.html?circuit=8BC-03.1_mono-stable_IC_555_timer-v3.json">Mono-stable timer circuit using integrated circuits</a>
+        <a href="circuit.html?circuit=8BC-04.1_bi-stable_IC_555_timer-v3.json">Bi-stable timer circuit using integrated circuits</a>
+        <a href="circuit.html?circuit=8BC-05.1_clock_select_logic-v2.json">Clock select using logic gates</a>
+        <a href="circuit.html?circuit=8BC-05.2_clock_select_logic_NAND-v2.json">Clock select using only NAND logic gates</a>
+        <a href="circuit.html?circuit=8BC-05.3_clock_select_NAND_IC-v2.json">Clock select using NAND integrated circuits</a>
+        <a href="circuit.html?circuit=8BC-05.4_clock_module_IC-v2.json">8BC MODULE: clock</a>
+        <a href="circuit.html?circuit=8BC-05.5_clock_module_IC_active_low_halt-v2.json">8BC MODULE: clock (halt active low)</a>
+        <a href="circuit.html?circuit=8BC-06.1_SR_latch_logic-v2.json">SR latch using logic gates</a>
+        <a href="circuit.html?circuit=8BC-07.1_SR_latch_with_enable_logic-v2.json">SR latch with enable using logic gates</a>
+        <a href="circuit.html?circuit=8BC-07.2_D_latch_logic-v2.json">D latch using logic gates</a>
+        <a href="circuit.html?circuit=8BC-08.1_D_flip-flop_RC_logic-v2.json">D flip-flop using logic gates</a>
+        <a href="circuit.html?circuit=8BC-11.1_4-bit_D_latch_memory_logic-v2.json">4-bit D flip-flop memory using logic gates</a>
+        <a href="circuit.html?circuit=8BC-12.1_register_module_IC-v2.json">8BC MODULE: 8-bit register</a>
+        <a href="circuit.html?circuit=8BC-12.2_two_register_modules_IC-v3.json">8BC MODULE: two 8-bit registers, mirrored</a>
+        <a href="circuit.html?circuit=8BC-12.3_instruction_register_module_IC-v3.json">8BC MODULE: 4-bit instruction register</a>
+        <a href="circuit.html?circuit=8BC-16.1_ALU_module_IC-v3.json">8BC MODULE: ALU</a>
+        <a href="circuit.html?circuit=8BC-20.1_16-byte_memory_module_IC-v2.json">8BC MODULE: 16-byte memory module</a>
+        <a href="circuit.html?circuit=8BC-21.1_memory_address_register_module_IC-v2.json">8BC MODULE: memory address register</a>
+        <a href="circuit.html?circuit=8BC-21.2_address_reg_and_memory_modules_IC-v2.json">8BC: memory and address register</a>
+        <a href="circuit.html?circuit=8BC-22.1_memory_subsystem_IC-v3.json">8BC: memory subsystem</a>
+        <a href="circuit.html?circuit=8BC-23.1_clock_and_memory_subsystem_IC-v2.json">8BC: clock and memory subsystem</a>
+        <a href="circuit.html?circuit=8BC-24.1_racing_JK_flip-flop_RC_logic-v2.json">JK flip-flop using logic gates (racing)</a>
+        <a href="circuit.html?circuit=8BC-24.2_racing_JK_flip-flop_RC_IC-v2.json">JK flip-flop using integrated circuits (racing)</a>
+        <a href="circuit.html?circuit=8BC-26.1_master_slave_JK_flip-flop_logic-v3.json">Master-slave JK flip-flop using logic gates</a>
+        <a href="circuit.html?circuit=8BC-26.2_master_slave_JK_flip-flop_IC-v2.json">Master-slave JK flip-flop using integrated circuits</a>
+        <a href="circuit.html?circuit=8BC-27.1_4-bit_binary_counter_IC-v2.json">4-bit binary counter using integrated circuits</a>
+        <a href="circuit.html?circuit=8BC-29.1_program_counter_module_IC-v3.json">8BC MODULE: program counter</a>
+        <a href="circuit.html?circuit=8BC-29.2_program_counter_module_IC_counter_enable_low-v2.json">8BC MODULE: program counter (enable active low)</a>
+        <a href="circuit.html?circuit=8BC-33.1_output_display_IC-v3.json">7-segment output display using EEPROM</a>
+        <a href="circuit.html?circuit=8BC-34.1_output_register_and_display_module_IC-v2.json">8BC MODULE: output register and display</a>
+        <a href="circuit.html?circuit=8BC-34.2_clock_MAR_RAM_IR_subsystem-v2.json">8BC: clock, MAR, RAM, and IR</a>
+        <a href="circuit.html?circuit=8BC-34.3_PC_Areg_ALU_Breg_display_subsystem-v2.json">8BC: program counter, A register, ALU, B register, and output</a>
+        <a href="circuit.html?circuit=8BC-38.1_control_logic_module_IC-v2.json">8BC MODULE: control logic</a>
+        <a href="circuit.html?circuit=8BC-39.1_complete_computer-v2.json">8-bit computer</a>
+    </div>
+    <div style="float:left">
+        <h3>Things to be aware of when attempting to use the circuit sketching tool:</h3>
+        <ul>
+            <li>It's not perfect</li>
+            <li>The main user interface is the pop-up menu
+                <ul>
+                    <li>Press and hold the mouse button to interact with the menu</li>
+                    <li>The menu is accessed using either the left or right mouse buttons</li>
+                    <li>The left button is probably easier because the brower's context menu is not blocked</li>
+                    <li>Release when hovering over the desired option to make that happen</li>
+                    <li>Release anywhere else to simply close the menu</li>
+                    <li>When the mouse is off the canvas, pressing the button does nothing</li>
+                    <li>When the mouse is on the canvas but off the circuit, pressing the button shows circuit-level options</li>
+                    <li>When the mouse is on the circuit over a blank spot, you can add a component</li>
+                    <li>When the mouse is over a component, you can modify it</li>
+                    <li>Some components cover more than one spot, but only their top-left spot is interactive</li>
+                    <li>Rotating or flipping a component does not change its interactive spot (but does move it)</li>
+                </ul>
+            </li>
+            <li>Click on a spot in the circuit to select it (be careful not to accidently select a menu option)</li>
+            <li>Hold shift and click another spot to select an area</li>
+            <li>Hold control and click multiple spots to select them</li>
+            <li>Holding shift or control when selecting a menu action will effect all the selected spots/components</li>
+            <li>Ctrl-C, X, & V will copy, cut, and paste the selection</li>
+            <li>Ctrl-Z will undo up to 100 steps -- there is no re-do, so be careful</li>
+            <li>Press the arrow keys to move around all the selected components</li>
+            <li>Hold shift and press the arrow keys to move the circuit on the canvas</li>
+            <li>Press the home key to reposition the circuit to the top-left corner of the canvas</li>
+            <li>Hold the shift key and use the scroll wheel to rotate all selected components individually</li>
+            <li>Use the mouse scroll wheel by itself to zoom in and out</li>
+            <li>Different browsers may also react to the mouse wheel if the window has scroll bars</li>
+            <li>After saving to JSON, you can use a text editor to modify the circuit's width, height, etc.
+                <ul>
+                    <li>When you open a circuit with a modified size, the component positions will be scambled</li>
+                    <li>You can fix it by clearing the circuit (keeping its size) and then merging it back in again</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
